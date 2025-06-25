@@ -5,7 +5,7 @@ A Django REST API for managing fitness class bookings with timezone support.
 ## 🌟 Features
 
 - Class management (Yoga, Zumba, HIIT)
-- Real-time slot availability tracking
+- slot availability tracking
 - Timezone-aware scheduling (IST with conversion support)
 - RESTful API endpoints
 - SQLite database (easy setup)
@@ -42,6 +42,11 @@ A Django REST API for managing fitness class bookings with timezone support.
 
     - pip install -r requirements.txt
 
+4. Do Migrations
+
+    - python manage.py makemigrations
+    - python manage.py migrate
+
 4. Seed sample data:
 
     - python manage.py seed_data
@@ -51,9 +56,9 @@ A Django REST API for managing fitness class bookings with timezone support.
     - python manage.py runserver
 
 
-📚 API Documentation
+## 📚 API Documentation
 
-Get All Classes
+### Get All Classes
 
     curl -X GET "http://localhost:8000/api/classes/?timezone=Asia/Kolkata"
 
@@ -70,7 +75,7 @@ Get All Classes
             }
         ]
 
-Create Booking
+### Create Booking
 
     curl -X POST "http://localhost:8000/api/bookings/book/" \
     -H "Content-Type: application/json" \
@@ -80,6 +85,11 @@ Create Booking
         "client_email": "john@example.com"
     }'
 
-Get Client Bookings
+### Get Client Bookings
 
     curl -X GET "http://localhost:8000/api/bookings/?email=john@example.com"
+
+
+## 🧪 Unit Testing
+
+    - python manage.py test
