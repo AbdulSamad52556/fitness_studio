@@ -34,21 +34,21 @@ A Django REST API for managing fitness class bookings with timezone support.
 
 2. Create and activate virtual environment:
 
-    python -m venv venv
-    source venv/bin/activate  # Linux/Mac
-    venv\Scripts\activate     # Windows
+    - python -m venv venv
+    - source venv/bin/activate  # Linux/Mac
+    - venv\Scripts\activate     # Windows
 
 3. Install dependencies:
 
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
 4. Seed sample data:
 
-    python manage.py seed_data
+    - python manage.py seed_data
 
 5. Run development server:
 
-    python manage.py runserver
+    - python manage.py runserver
 
 
 📚 API Documentation
