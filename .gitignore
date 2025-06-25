@@ -1,0 +1,26 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+env/
+
+# Virtual environment
+venv/
+.env
+.env*
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Database migrations (except initial ones)
+*/migrations/*.py
+!*/migrations/__init__.py
