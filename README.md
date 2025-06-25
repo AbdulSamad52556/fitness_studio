@@ -47,18 +47,18 @@ A Django REST API for managing fitness class bookings with timezone support.
 4. Do Migrations
 
     ```bash
-    - python manage.py makemigrations
-    - python manage.py migrate
+    python manage.py makemigrations
+    python manage.py migrate
 
 4. Seed sample data:
 
     ```bash
-    - python manage.py seed_data
+    python manage.py seed_data
 
 5. Run development server:
 
     ```bash
-    - python manage.py runserver
+    python manage.py runserver
 
 ## 🧪 Unit Testing
 
@@ -69,19 +69,6 @@ A Django REST API for managing fitness class bookings with timezone support.
 ### Get All Classes
 
     curl -X GET "http://localhost:8000/api/classes/?timezone=Asia/Kolkata"
-
-    Response:
-        [
-            {
-                "id": 1,
-                "name": "YOGA",
-                "datetime": "2023-12-25T03:30:00Z",
-                "local_datetime": "2023-12-25T09:00:00+05:30",
-                "instructor": "Yoga Master",
-                "max_slots": 15,
-                "available_slots": 10
-            }
-        ]
 
 ### Create Booking
 
